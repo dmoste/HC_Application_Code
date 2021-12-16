@@ -19,17 +19,12 @@ strStart = "https://github.com/dmoste/HC_Application_Code/blob/main/"
 strEnd = ".png?raw=true"
 
 #create dictionary of images stored in GitHub
-imageURLs = {"Shakrinkle":[strStart + "shakrinkle1" + strEnd,
-                           strStart + "shakrinkle2" + strEnd],
-             "Buckeyes":[strStart + "buckeyes1" + strEnd,
-                         strStart + "buckeyes2" + strEnd],
+imageURLs = {"Shakrinkle":[strStart + "shakrinkle1" + strEnd, strStart + "shakrinkle2" + strEnd],
+             "Buckeyes":[strStart + "buckeyes1" + strEnd, strStart + "buckeyes2" + strEnd],
              "2-3":[strStart + "23" + strEnd],
              "3-2":[strStart + "32" + strEnd],
-             "Stack 1":[strStart + "stack11" + strEnd,
-                        strStart + "stack12" + strEnd],
-             "Stack 2":[strStart + "stack21" + strEnd,
-                        strStart + "stack22" + strEnd,
-                        strStart + "stack23" + strEnd]}
+             "Stack 1":[strStart + "stack11" + strEnd, strStart + "stack12" + strEnd],
+             "Stack 2":[strStart + "stack21" + strEnd, strStart + "stack22" + strEnd, strStart + "stack23" + strEnd]}
 
 imageDict = {"Shakrinkle":[],
              "Buckeyes":[],
