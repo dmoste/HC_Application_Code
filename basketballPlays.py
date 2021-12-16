@@ -111,7 +111,7 @@ def showPlay(play, n):
     playImage.grid(row = 0, column = 0, columnspan = 3)
     
     backButton = tk.Button(master = diagramFrame,
-                           text = "Back",
+                           text = "Previous",
                            command = partial(showPlay, play, n-1)).grid(row = 1, column = 0)
     
     locationLabel = tk.Label(master = diagramFrame,
