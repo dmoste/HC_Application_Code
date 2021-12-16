@@ -15,7 +15,7 @@ offenseOptions = ["Shakrinkle", "Buckeyes"]
 defenseOptions = ["2-3", "3-2"]
 inboundsOptions = ["Stack 1", "Stack 2"]
 
-strStart = "https://github.com/dmoste/HC_Application_Code/blob/main/"
+strStart = "https://github.com/dmoste/HC_Application_Code/blob/main/Python/"
 strEnd = ".png?raw=true"
 
 #create dictionary of images stored in GitHub
@@ -77,21 +77,25 @@ def getGroup():
     clearOptionsFrame()
     fillOptionsFrame()
     
+    listPlaysLabel = tk.Label(master = optionsFrame,
+                              text = "Pick a play from the options below",
+                              bg = "White").grid(row = 3, column = 0)
+    
     if group == "Offense":
         for i, play in enumerate(offenseOptions):
             tk.Button(master = optionsFrame,
                       text = play,
-                      command = partial(showPlay, play, 0)).grid(row = i+3, column = 0)
+                      command = partial(showPlay, play, 0)).grid(row = i+4, column = 0)
     elif group == "Defense":
         for i, play in enumerate(defenseOptions):
             tk.Button(master = optionsFrame,
                       text = play,
-                      command = partial(showPlay, play, 0)).grid(row = i+3, column = 0)
+                      command = partial(showPlay, play, 0)).grid(row = i+4, column = 0)
     else:
         for i, play in enumerate(inboundsOptions):
             tk.Button(master = optionsFrame,
                       text = play,
-                      command = partial(showPlay, play, 0)).grid(row = i+3, column = 0)
+                      command = partial(showPlay, play, 0)).grid(row = i+4, column = 0)
 
 def showPlay(play, n):
     numDiagrams = len(imageDict[play])
@@ -127,7 +131,7 @@ diagramFrame = tk.Frame(master = window,
                         bg = "White")
 optionsFrame = tk.Frame(master = window,
                         height = 400,
-                        width = 100,
+                        width = 200,
                         bg = "White")
 
 getImages()
