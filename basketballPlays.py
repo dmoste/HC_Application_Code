@@ -1,7 +1,10 @@
 import tkinter as tk
 from tkinter import ttk
+
 from functools import partial
+
 from PIL import ImageTk, Image
+
 import requests
 from io import BytesIO
 
@@ -64,10 +67,6 @@ def getImages():
 
 def clearOptionsFrame():
     for widget in optionsFrame.winfo_children():
-        widget.destroy()
-        
-def clearDiagramFrame():
-    for widget in diagramFrame.winfo_children():
         widget.destroy()
 
 def getGroup():
