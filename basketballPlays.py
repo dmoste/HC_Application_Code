@@ -15,18 +15,21 @@ offenseOptions = ["Shakrinkle", "Buckeyes"]
 defenseOptions = ["2-3", "3-2"]
 inboundsOptions = ["Stack 1", "Stack 2"]
 
+strStart = "https://github.com/dmoste/HC_Application_Code/blob/main/"
+strEnd = ".png?raw=true"
+
 #create dictionary of images stored in GitHub
-imageURLs = {"Shakrinkle":["https://github.com/dmoste/HC_Application_Code/blob/main/shakrinkle1.png?raw=true",
-                           "https://github.com/dmoste/HC_Application_Code/blob/main/shakrinkle2.png?raw=true"],
-             "Buckeyes":["https://github.com/dmoste/HC_Application_Code/blob/main/buckeyes1.png?raw=true",
-                         "https://github.com/dmoste/HC_Application_Code/blob/main/buckeyes2.png?raw=true"],
-             "2-3":["https://github.com/dmoste/HC_Application_Code/blob/main/23.png?raw=true"],
-             "3-2":["https://github.com/dmoste/HC_Application_Code/blob/main/32.png?raw=true"],
-             "Stack 1":["https://github.com/dmoste/HC_Application_Code/blob/main/stack11.png?raw=true",
-                        "https://github.com/dmoste/HC_Application_Code/blob/main/stack12.png?raw=true"],
-             "Stack 2":["https://github.com/dmoste/HC_Application_Code/blob/main/stack21.png?raw=true",
-                        "https://github.com/dmoste/HC_Application_Code/blob/main/stack22.png?raw=true",
-                        "https://github.com/dmoste/HC_Application_Code/blob/main/stack23.png?raw=true"]}
+imageURLs = {"Shakrinkle":[strStart + "shakrinkle1" + strEnd,
+                           strStart + "shakrinkle2" + strEnd],
+             "Buckeyes":[strStart + "buckeyes1" + strEnd,
+                         strStart + "buckeyes2" + strEnd],
+             "2-3":[strStart + "23" + strEnd],
+             "3-2":[strStart + "32" + strEnd],
+             "Stack 1":[strStart + "stack11" + strEnd,
+                        strStart + "stack12" + strEnd],
+             "Stack 2":[strStart + "stack21" + strEnd,
+                        strStart + "stack22" + strEnd,
+                        strStart + "stack23" + strEnd]}
 
 imageDict = {"Shakrinkle":[],
              "Buckeyes":[],
