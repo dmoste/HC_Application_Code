@@ -1,3 +1,4 @@
+#import required libraries
 import tkinter as tk
 from tkinter import ttk
 
@@ -8,11 +9,13 @@ from PIL import ImageTk, Image
 import requests
 from io import BytesIO
 
+#create play types and play names
 playTypes = ["Offense", "Defense", "Inbounds"]
 offenseOptions = ["Shakrinkle", "Buckeyes"]
 defenseOptions = ["2-3", "3-2"]
 inboundsOptions = ["Stack 1", "Stack 2"]
 
+#create dictionary of images stored in GitHub
 imageURLs = {"Shakrinkle":["https://github.com/dmoste/HC_Application_Code/blob/main/shakrinkle1.png?raw=true",
                            "https://github.com/dmoste/HC_Application_Code/blob/main/shakrinkle2.png?raw=true"],
              "Buckeyes":["https://github.com/dmoste/HC_Application_Code/blob/main/buckeyes1.png?raw=true",
@@ -24,6 +27,7 @@ imageURLs = {"Shakrinkle":["https://github.com/dmoste/HC_Application_Code/blob/m
              "Stack 2":["https://github.com/dmoste/HC_Application_Code/blob/main/stack21.png?raw=true",
                         "https://github.com/dmoste/HC_Application_Code/blob/main/stack22.png?raw=true",
                         "https://github.com/dmoste/HC_Application_Code/blob/main/stack23.png?raw=true"]}
+
 imageDict = {"Shakrinkle":[],
              "Buckeyes":[],
              "2-3":[],
@@ -117,7 +121,6 @@ def showPlay(play, n):
     forwardButton = tk.Button(master = diagramFrame,
                               text = "Next",
                               command = partial(showPlay, play, n+1)).grid(row = 1, column = 2)
-
 
 window = tk.Tk()
 diagramFrame = tk.Frame(master = window,
