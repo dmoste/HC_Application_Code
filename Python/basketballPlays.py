@@ -1,4 +1,4 @@
-#import required libraries
+#import tkinter GUI library
 import tkinter as tk
 from tkinter import ttk
 
