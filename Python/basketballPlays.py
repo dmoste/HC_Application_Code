@@ -1,11 +1,14 @@
-#import tkinter GUI library
+#import tkinter GUI library - ttk required for combobox
 import tkinter as tk
 from tkinter import ttk
 
+#imprt partial to send arguments from tkinter commands
 from functools import partial
 
+#import pillow to handle the images
 from PIL import ImageTk, Image
 
+#import requests and BytesIO to get images from internet links
 import requests
 from io import BytesIO
 
@@ -15,6 +18,7 @@ offenseOptions = ["Shakrinkle", "Buckeyes"]
 defenseOptions = ["2-3", "3-2"]
 inboundsOptions = ["Stack 1", "Stack 2"]
 
+#setup the common portion of the links string
 strStart = "https://github.com/dmoste/HC_Application_Code/blob/main/Python/"
 strEnd = ".png?raw=true"
 
